@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container text-center"><h1>Where to surf this week-end</h1></div>
+<div class="container"> <div id="mapid"></div>
+    <div class="row"></div>
+    <div class="row">The best spot is Bronte</div>
+
+</div>
+
+<script>
+
+	var mymap = L.map('mapid').setView([-33.8914,151.2766], 11);
+
+    var SurfIcon = L.icon({
+	iconUrl: 'static/ressources/Surfericon.png',
+	iconSize: [50,40], // size of the icon
+});
+
+    var SurfHere = L.icon({
+	iconUrl: 'static/ressources/Surfhere.png',
+	iconSize: [50,40], // size of the icon
+	});
+
+	L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+			'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+		id: 'mapbox.streets'
+	}).addTo(mymap);
+	var marker_bondi = L.marker([-33.8914,151.2766], {icon: SurfIcon}).addTo(mymap);
+	var marker_bronte = L.marker([-33.90346,151.26916], {icon: SurfHere}).addTo(mymap);
+	var marker_manly = L.marker([-33.7950,151.2893], {icon: SurfIcon}).addTo(mymap);
+	var marker_maroubra = L.marker([-33.94878,151.25771], {icon: SurfIcon}).addTo(mymap).bindPopup("<b>stese</b><br>test ?");
+	marker_bondi.bindPopup("<b>state</b><br>results ?").openPopup();
+
+
+
+</script>
+{% endblock %}

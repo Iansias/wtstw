@@ -1,0 +1,36 @@
+/*bleue orange truc*/
+:root {
+--background_color: #1a4854;
+--menu_color_a: #fdbc49;
+--menu_color: #f2a41b;
+--box_color: #559baf;
+--police_1: grey;
+--police_2: #fff;
+--progress_contrast: #c6c6c64d;
+--shadow: #00000082;
+--stars: #f7ed00;}
+
+/*green sobre*/
+:root {
+--background_color: #e9ebee;
+--menu_color_a: #54aa54;
+--menu_color: #2d882d;
+--box_color: #ffffff;
+--police_1: #606770;
+--police_2: #606770;
+--progress_contrast: #c6c6c64d;
+--shadow: #00000050;
+--stars: #f7ed00;
+}
+/*neon noir*/
+:root {
+--background_color: #06041d;
+--menu_color_a: #2fedd3;
+--menu_color: #35ad9c;
+--box_color: #174a4b;
+--police_1: #fff;
+--police_2: #fff;
+--progress_contrast: #c6c6c64d;
+--shadow: #00000050;
+--stars: #f7ed00;
+}

@@ -1,0 +1,25 @@
+:root {
+--background_color: #06041d;
+--menu_color_a: #2fedd3;
+--menu_color: #35ad9c;
+--box_color: #174a4b;
+--police_1: #fff;
+--police_2: #fff;
+--progress_contrast: rgba(0,0,0,0.15);
+--shadow: #1a1369;
+--stars: #f7ed00;
+--box_color_tran: #174a4bcc;
+}
+
+
+body, html {
+  background: -webkit-gradient(linear, left bottom, left top, from(var(--background_color)), to(var(--menu_color)));
+  background: linear-gradient(0deg, var(--background_color) 0%, var(--menu_color) 75%);
+  color: var(--police_1);
+}
+.footer_wt{
+background_color: var(--background_color);
+height:10vh;
+}
+#mapid { min-height: 75vh;}
+
